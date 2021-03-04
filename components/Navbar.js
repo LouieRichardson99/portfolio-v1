@@ -16,9 +16,6 @@ export default function Navbar() {
                         <li className="nav-item">
                             <Link href="/blog"><a className="nav-link sm:mr-5">Blog</a></Link>
                         </li>
-                        <li className="nav-item">
-                            <Link href="/portfolio"><a className="nav-link ">Portfolio</a></Link>
-                        </li>
                     </ul>
                 </div>
             </div>

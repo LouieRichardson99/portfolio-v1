@@ -1,5 +1,5 @@
 .markdown {
-    @apply text-base leading-relaxed text-gray-800 font-body;
+    @apply text-base leading-relaxed font-body;
 }
 
 .markdown p,
@@ -29,4 +29,8 @@
 
 .markdown img {
     @apply mx-auto my-10;
+}
+
+.markdown a {
+    @apply hover:text-red-600;
 }

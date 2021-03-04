@@ -19,10 +19,12 @@ export default function post({ post }) {
         <div className='text-gray-700 mb-6 sm:mb-10 text-center -mt-8'>
           <BlogDate dateString={post.first_publication_date}/>
         </div>
-        <img   
+        <Image   
             className="rounded-xl mb-8 sm:mb-10"       
             src={post.data.hero_image.url}
             alt={post.data.hero_image.alt}
+            width={post.data.hero_image.dimensions.width}
+            height={post.data.hero_image.dimensions.height}
         />
         <div className={markdownStyles['markdown']}>
           {RichText.render(post.data.blog_content)}
