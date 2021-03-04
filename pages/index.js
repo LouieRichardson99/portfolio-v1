@@ -59,8 +59,8 @@ export default function Home({ projects }) {
             <p>You can get in touch with me at <a href="mailto:louie.richardson99@gmail.com" className="hover:text-red-600 text-red-600 font-semibold">louie.richardson99@gmail.com</a></p>
           </div>
           <div className="text-2xl flex sm:hidden mt-2">
-            <a href="https://twitter.com/louie_rich99" target="_blank"><i aria-hidden className="block fab fa-twitter pb-2 mr-4"></i></a>
-            <a href="https://github.com/LouieRichardson99" target="_blank"><i aria-hidden className="block fab fa-github"></i></a>
+            <a rel="noopener" href="https://twitter.com/louie_rich99" target="_blank"><i aria-hidden className="block fab fa-twitter pb-2 mr-4"></i></a>
+            <a rel="noopener" href="https://github.com/LouieRichardson99" target="_blank"><i aria-hidden className="block fab fa-github"></i></a>
           </div>
         </section>
       </main>
