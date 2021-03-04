@@ -8,7 +8,6 @@ import ProjectPanel from "../components/ProjectPanel";
 import { RichText } from "prismic-reactjs";
 import Meta from "../components/Meta";
 
-
 export default function Home({ projects }) {
   return (
     <div className="font-body text-gray-800">
