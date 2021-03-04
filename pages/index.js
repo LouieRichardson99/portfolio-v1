@@ -7,10 +7,14 @@ import Prismic from "prismic-javascript";
 import ProjectPanel from "../components/ProjectPanel";
 import { RichText } from "prismic-reactjs";
 import Meta from "../components/Meta";
+import Head from "next/head";
 
 export default function Home({ projects }) {
   return (
     <div className="font-body text-gray-800">
+      <Head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css" defer/>
+      </Head>
       <Meta 
         title="Homepage"
         desc="I’m a web developer based in Milton Keynes, United Kingdom."
