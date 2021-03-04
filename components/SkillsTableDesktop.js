@@ -3,10 +3,10 @@ export default function SkillsTableDesktop() {
         <table className="text-gray-800 mx-auto mt-14 border-collapse">
             <thead className="border-b-2 border-red-600">
                 <tr>
-                    <th className="py-3 w-32 text-left font-semibold">Front-end</th>
-                    <th className="w-32 text-left font-semibold">Back-end</th>
-                    <th className="w-32 text-left font-semibold">Database</th>
-                    <th className="w-32 text-left font-semibold">Other</th>
+                    <th className="py-3 skills-table-head">Front-end</th>
+                    <th className="skills-table-head">Back-end</th>
+                    <th className="skills-table-head">Database</th>
+                    <th className="skills-table-head">Other</th>
                 </tr>
             </thead>
             <tbody>

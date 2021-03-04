@@ -14,6 +14,9 @@ export default function Navbar() {
                             <Link href="/"><a className="nav-link sm:mr-5">Home</a></Link>
                         </li>
                         <li className="nav-item">
+                            <Link href="/#projects"><a className="nav-link sm:mr-5">Projects</a></Link>
+                        </li>
+                        <li className="nav-item">
                             <Link href="/blog"><a className="nav-link sm:mr-5">Blog</a></Link>
                         </li>
                     </ul>

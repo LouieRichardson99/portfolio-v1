@@ -28,7 +28,7 @@ export default function SkillsTableMobile() {
             </tbody>
             <thead>
                 <tr className="border-b-2 border-red-600">
-                    <th className="py-3 w-28 text-left font-semibold">Database</th>
+                    <th className="w-28 py-3 text-left font-semibold">Database</th>
                     <th className="w-28 text-left font-semibold">Other</th>
                 </tr>
             </thead>

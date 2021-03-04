@@ -13,7 +13,7 @@ export default function blog({blogs}) {
           desc="I talk about anything tech related!"
         />
         <h1 className="font-semibold mb-4 text-2xl text-center">Blog</h1>
-        <div className="grid w-11/12 xl:w-3/4 2xl:w-3/4 max-w-screen-xl grid-cols-1 sm:grid-cols-2 mx-auto -mt-6 sm:mt-0 md:grid-cols-3">
+        <div className="blog-grid">
           {blogs.results.map(blog => {
             return <BlogPanel
                 key={blog.uid}
