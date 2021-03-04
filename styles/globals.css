@@ -25,5 +25,5 @@
 }
 
 .blog-grid {
-    @apply grid w-11/12 xl:w-3/4 2xl:w-3/4 max-w-screen-xl grid-cols-1 sm:grid-cols-2 mx-auto -mt-6 sm:mt-0 md:grid-cols-3;
+    @apply grid w-11/12 xl:w-3/4 2xl:w-3/4 max-w-screen-xl grid-cols-1 md:grid-cols-2 mx-auto -mt-6 sm:mt-0 lg:grid-cols-3;
 }

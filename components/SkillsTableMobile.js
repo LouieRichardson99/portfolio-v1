@@ -1,6 +1,6 @@
 export default function SkillsTableMobile() {
     return (
-        <table className="text-gray-800 mx-auto mt-14 border-collapse sm:hidden">
+        <table className="text-gray-800 mx-auto mt-8 border-collapse sm:hidden">
             <thead>
                 <tr className="border-b-2 border-red-600">
                     <th className="py-3 w-36 text-left font-semibold">Front-end</th>

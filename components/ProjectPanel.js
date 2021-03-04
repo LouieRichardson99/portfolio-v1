@@ -1,13 +1,15 @@
+import Image from "next/image";
 import markdownStyles from "../styles/markdown-styles.module.css";
 
 export default function ProjectPanel(props) {
     return (
-        <div className="font-body w-11/12 sm:max-w-sm sm:m-3 mx-auto text-gray-800">
+        <div className="font-body w-full sm:max-w-sm sm:m-3 mx-auto text-gray-800">
             <div>
-                <img
+                <Image
+                    width={props.imageWidth}
+                    height={props.imageHeight}
                     src={props.projectImage}
                     alt={props.projectName}
-                    className="p-2 mt-3 rounded-xl object-cover w-full h-full overflow-hidden"
                 />
             </div>
             <div className="font-semibold text-xl text-center my-3">{props.projectName}</div>

@@ -18,6 +18,8 @@ export default function blog({blogs}) {
             return <BlogPanel
                 key={blog.uid}
                 blogHeroImage={blog.data.hero_image.url}
+                blogImageWidth={blog.data.hero_image.dimensions.width}
+                blogImageHeight={blog.data.hero_image.dimensions.height}
                 blogDate={<BlogDate dateString={blog.first_publication_date}/>}
                 blogTitle={RichText.render(blog.data.blog_title)}
                 blogAltText={blog.data.hero_image.alt}

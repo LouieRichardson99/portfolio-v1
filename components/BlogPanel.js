@@ -1,12 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function BlogPanel(props) {
   return (
     <Link href={`/blog/${props.blogSlug}`}>
       <a>
         <div className="font-body text-gray-800 mx-3 my-6">
-          <img
-            className="object-cover w-full h-40 rounded-xl"
+          <Image
+            className="rounded-xl"
+            width={props.blogImageWidth}
+            height={props.blogImageHeight}
             src={props.blogHeroImage}
             alt={props.blogAltText}
           />

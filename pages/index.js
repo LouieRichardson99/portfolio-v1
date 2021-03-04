@@ -40,11 +40,13 @@ export default function Home({ projects }) {
         </section>
         <section id="projects" className="max-w-3xl mx-auto mt-12 sm:mt-20 w-11/12">
           <h3 className="section-header">Projects</h3>
-          <div>
+          <div className="mt-5">
             {projects.results.map(project => {
               return <ProjectPanel
                 key={project.id}
                 projectImage={project.data.project_image.url}
+                imageWidth={project.data.project_image.dimensions.width}
+                imageHeight={project.data.project_image.dimensions.height}
                 projectName={project.data.project_image.alt}
                 projectDesc={RichText.render(project.data.project_description)}
                 liveURL={project.data.live_url.url}
@@ -59,8 +61,8 @@ export default function Home({ projects }) {
             <p>You can get in touch with me at <a href="mailto:louie.richardson99@gmail.com" className="hover:text-red-600 text-red-600 font-semibold">louie.richardson99@gmail.com</a></p>
           </div>
           <div className="text-2xl flex sm:hidden mt-2">
-            <a rel="noopener" href="https://twitter.com/louie_rich99" target="_blank"><i aria-label="Twitter link icon" className="block fab fa-twitter pb-2 mr-4"></i></a>
-            <a rel="noopener" href="https://github.com/LouieRichardson99" target="_blank"><i aria-label="Github link icon" className="block fab fa-github"></i></a>
+            <a rel="noopener" href="https://twitter.com/louie_rich99" target="_blank" aria-label="Twitter link icon" ><i className="block fab fa-twitter pb-2 mr-4"></i></a>
+            <a rel="noopener" href="https://github.com/LouieRichardson99" target="_blank" aria-label="Github link icon"><i className="block fab fa-github"></i></a>
           </div>
         </section>
       </main>
