@@ -1,29 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .cta-button {
-    @apply relative py-2 px-3 bg-red-600 text-white font-light rounded-xl tracking-wide;
+  @apply relative py-2 px-3 bg-red-600 text-white font-light rounded-xl tracking-wide;
 }
 
 .section-header {
-    @apply text-red-600 font-semibold text-xl;
+  @apply text-red-600 font-semibold text-xl;
 }
 
 .skills-table-head {
-    @apply w-32 text-left font-semibold;
+  @apply w-32 text-left font-semibold;
 }
 
 .github-button {
-    @apply py-1 px-3 bg-gray-800 text-white rounded-md w-full h-11 mb-2 mx-auto relative block;
+  @apply py-1 px-3 bg-gray-800 text-white rounded-md w-full h-11 mb-2 mx-auto relative block;
 }
 
 .live-view-button {
-    @apply py-1 px-3 bg-red-600 rounded-md w-full h-11 mx-auto relative block text-white;
+  @apply py-1 px-3 bg-red-600 rounded-md w-full h-11 mx-auto relative block text-white;
 }
 
 .blog-grid {
-    @apply grid w-11/12 xl:w-3/4 2xl:w-3/4 max-w-screen-xl grid-cols-1 md:grid-cols-2 mx-auto -mt-6 sm:mt-0 lg:grid-cols-3;
+  @apply grid w-11/12 xl:w-3/4 2xl:w-3/4 max-w-screen-xl grid-cols-1 md:grid-cols-2 mx-auto -mt-6 sm:mt-0 lg:grid-cols-3;
 }

@@ -1,36 +1,36 @@
 .markdown {
-    @apply text-base leading-relaxed font-body;
+  @apply text-base leading-relaxed font-body;
 }
 
 .markdown p,
 .markdown blockquote {
-    @apply my-5;
+  @apply my-5;
 }
 
 .markdown ol {
-    @apply -mt-2 list-decimal text-left;
+  @apply -mt-2 list-decimal text-left;
 }
 
 .markdown ul {
-    @apply -mt-2 list-disc text-left;
+  @apply -mt-2 list-disc text-left;
 }
 
 .markdown h1 {
-    @apply text-3xl mb-10 text-center;
+  @apply text-3xl mb-10 text-center;
 }
 
 .markdown h2 {
-    @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-2xl mt-8 mb-4 leading-snug;
 }
 
 .markdown h3 {
-    @apply text-xl mt-8 mb-6 leading-snug;
+  @apply text-xl mt-8 mb-6 leading-snug;
 }
 
 .markdown img {
-    @apply mx-auto my-10;
+  @apply mx-auto my-10;
 }
 
 .markdown a {
-    @apply hover:text-red-600;
+  @apply hover:text-red-600;
 }
