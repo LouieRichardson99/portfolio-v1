@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function post({ post }) {
   return (
     <div>
-      <Meta title={post.data.title} desc={post.data.blog_excerpt} />
+      <Meta title={post.data.blog_title[0].text} desc={post.data.blog_excerpt[0].text} />
       <div className="w-10/12 sm:w-3/4 md:max-w-3xl mx-auto mt-8 sm:mt-16 font-body">
         <div className={markdownStyles["markdown"]}>
           {RichText.render(post.data.blog_title)}
