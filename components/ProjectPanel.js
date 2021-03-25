@@ -3,7 +3,7 @@ import markdownStyles from "../styles/markdown-styles.module.css";
 
 export default function ProjectPanel(props) {
   return (
-    <div className="font-body w-full sm:max-w-sm sm:m-3 mx-auto text-gray-800">
+    <div className="font-body w-full md:max-w-sm mb-16 text-gray-800 md:mb-5">
       <div>
         <Image
           width={props.imageWidth}
@@ -15,7 +15,7 @@ export default function ProjectPanel(props) {
       <div className="font-semibold text-xl text-center my-3">
         {props.projectName}
       </div>
-      <div className="mx-3">
+      <div className="mx-3 h-xl">
         <div className={markdownStyles["markdown"]}>{props.projectDesc}</div>
       </div>
       <div className="p-2">

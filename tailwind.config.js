@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         body: ["Open Sans"],
       },
+      height: {
+        xl: '450px'
+      }
     },
   },
   variants: {

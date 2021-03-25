@@ -62,7 +62,7 @@ export default function Home({ projects }) {
           className="max-w-3xl mx-auto mt-12 sm:mt-20 w-11/12"
         >
           <h3 className="section-header">Projects</h3>
-          <div className="mt-5">
+          <div className="mt-5 md:flex">
             {projects.results.map((project) => {
               return (
                 <ProjectPanel
@@ -127,5 +127,6 @@ export async function getStaticProps() {
     props: {
       projects,
     },
-  };
+    revalidate: 1
+  }
 }
