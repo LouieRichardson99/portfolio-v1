@@ -63,6 +63,11 @@ export default function SkillsTableMobile() {
             <i className="devicon-css3-plain mr-2"></i>Tailwindcss
           </td>
         </tr>
+        <tr>
+          <td className="py-1">
+            <i className="devicon-firebase-plain mr-2"></i>Firebase
+          </td>
+        </tr>
       </tbody>
     </table>
   );
