@@ -15,7 +15,7 @@ export default function ProjectPanel(props) {
       <div className="font-semibold text-xl text-center my-3">
         {props.projectName}
       </div>
-      <div className="mx-3 h-xl">
+      <div className="mx-3 md:h-xl">
         <div className={markdownStyles["markdown"]}>{props.projectDesc}</div>
       </div>
       <div className="p-2">
