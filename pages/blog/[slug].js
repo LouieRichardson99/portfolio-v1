@@ -4,12 +4,16 @@ import markdownStyles from "../../styles/markdown-styles.module.css";
 import BlogDate from "../../components/BlogDate";
 import Meta from "../../components/Meta";
 import Image from "next/image";
+import Prismic from "prismic-javascript";
 
 export default function post({ post }) {
   return (
-    <div>
-      <Meta title={post.data.blog_title[0].text} desc={post.data.blog_excerpt[0].text} />
-      <div className="w-10/12 sm:w-3/4 md:max-w-3xl mx-auto mt-8 sm:mt-16 font-body">
+    <>
+      <Meta
+        title={post.data.blog_title[0].text}
+        desc={post.data.blog_excerpt[0].text}
+      />
+      <main className="w-11/12 sm:w-3/4 md:max-w-3xl mx-auto mt-8 sm:mt-16 font-body">
         <div className={markdownStyles["markdown"]}>
           {RichText.render(post.data.blog_title)}
         </div>
@@ -26,17 +30,35 @@ export default function post({ post }) {
         <div className={markdownStyles["markdown"]}>
           {RichText.render(post.data.blog_content)}
         </div>
-      </div>
-    </div>
+      </main>
+    </>
   );
 }
 
-export async function getServerSideProps({ query }) {
-  const post = await client.getByUID("blog_post", query.slug);
+export async function getStaticProps(context) {
+  const slug = context.params.slug;
+  const post = await client.getByUID("blog_post", slug);
 
   return {
     props: {
       post,
     },
+  };
+}
+
+export async function getStaticPaths() {
+  const posts = await client.query(
+    Prismic.Predicates.at("document.type", "blog_post")
+  );
+
+  const paths = posts.results.map((post) => {
+    return {
+      params: { slug: post.uid },
+    };
+  });
+
+  return {
+    paths,
+    fallback: false,
   };
 }

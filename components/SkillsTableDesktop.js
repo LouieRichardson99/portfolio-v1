@@ -42,8 +42,7 @@ export default function SkillsTableDesktop() {
           <td className="py-1">
             <i className="devicon-javascript-plain mr-2"></i>JavaScript
           </td>
-          <td className="py-1"
-          ></td>
+          <td className="py-1"></td>
           <td className="py-1">
             <i className="devicon-firebase-plain mr-2"></i>Firebase
           </td>
