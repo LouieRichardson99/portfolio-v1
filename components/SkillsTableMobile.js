@@ -57,17 +57,13 @@ export default function SkillsTableMobile() {
         </tr>
         <tr>
           <td className="py-1">
-            <i className="devicon-mongodb-plain mr-2"></i>MongoDB
+            <i className="devicon-firebase-plain mr-2"></i>Firebase
           </td>
           <td className="py-1">
             <i className="devicon-css3-plain mr-2"></i>Tailwindcss
           </td>
         </tr>
-        <tr>
-          <td className="py-1">
-            <i className="devicon-firebase-plain mr-2"></i>Firebase
-          </td>
-        </tr>
+        <tr></tr>
       </tbody>
     </table>
   );
