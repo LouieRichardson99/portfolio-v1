@@ -7,8 +7,9 @@ module.exports = {
         body: ["Open Sans"],
       },
       height: {
-        xl: '450px'
-      }
+        xl: "450px",
+        88: "22rem",
+      },
     },
   },
   variants: {

@@ -33,6 +33,14 @@ export default function Navbar() {
                 <a className="nav-link sm:mr-5">Blog</a>
               </Link>
             </li>
+            <li className="nav-item">
+              <a
+                href="mailto:louie.richardson99@gmail.com"
+                className="nav-link sm:mr-5"
+              >
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       </div>

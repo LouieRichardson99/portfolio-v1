@@ -62,7 +62,7 @@ export default function Home({ projects }) {
           className="max-w-3xl mx-auto mt-12 sm:mt-20 w-11/12"
         >
           <h3 className="section-header">Projects</h3>
-          <div className="mt-5 md:flex">
+          <div className="mt-5 md:flex flex-wrap justify-center">
             {projects.results.map((project) => {
               return (
                 <ProjectPanel
