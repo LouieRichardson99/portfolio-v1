@@ -59,7 +59,7 @@ export default function Home({ projects }) {
         </section>
         <section
           id="projects"
-          className="max-w-3xl mx-auto mt-12 sm:mt-20 w-11/12"
+          className="max-w-3xl mx-auto mt-12 sm:mt-20 w-11/12 pt-3"
         >
           <h3 className="section-header">Projects</h3>
           <div className="mt-5 md:flex flex-wrap justify-center">
