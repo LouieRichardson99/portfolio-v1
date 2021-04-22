@@ -1,4 +1,5 @@
 # Portfolio Website
+![Screenshot 2021-04-22 at 14 49 13](https://user-images.githubusercontent.com/60019261/115725627-edbeb200-a379-11eb-89f9-ba92a0e06e14.png)
 
 Hi, my name is Louie and this is my portfolio website repository!
 
