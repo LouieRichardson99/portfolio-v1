@@ -27,6 +27,7 @@ export default function HeroPortraitDiv() {
       </div>
       <div className="mt-12 sm:mt-0 mx-auto sm:mx-0">
         <Image
+          loading="eager"
           className="rounded-xl"
           src="/louie-richardson.jpg"
           width="275"
