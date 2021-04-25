@@ -9,24 +9,25 @@ export default function handler(req, res) {
     const data = {
       from: email,
       to: "louie.richardson99@gmail.com",
-      name,
-      text: message,
+      subject: `Message from ${name}`,
+      text: `${message}\n\n(Sent from louierichardson.com)`,
     };
 
-    let transporter = nodemailer.createTransport({
+    const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
         user: "louie.richardson99@gmail.com",
         pass: process.env.EMAIL_PASSWORD,
       },
     });
-    console.log(transporter);
 
     transporter.sendMail(data, (err, info) => {
       if (err) {
-        return console.log(err);
+        return res
+          .status(400)
+          .json({ message: "There seems to have been an error." });
       }
-      return console.log(info);
+      return res.status(200).json({ message: "Message sent!" });
     });
   }
 }

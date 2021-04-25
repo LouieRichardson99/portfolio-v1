@@ -3,6 +3,7 @@ import axios from "axios";
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [response, setResponse] = useState(null);
 
   const handleChange = (e) => {
     setForm({
@@ -17,7 +18,15 @@ export default function ContactForm() {
     axios("api/contact-form", {
       method: "POST",
       data: form,
-    });
+    })
+      .then((res) => {
+        setResponse(res.data.message);
+      })
+      .catch((err) => {
+        setResponse(err.response.data.message);
+      });
+
+    setForm({ name: "", email: "", message: "" });
   };
 
   return (
@@ -50,6 +59,7 @@ export default function ContactForm() {
           <textarea
             name="message"
             value={form.message}
+            required
             onChange={handleChange}
             className="block bg-gray-100 rounded-md px-1.5 w-full h-36 mt-0.5"
           />
@@ -71,6 +81,7 @@ export default function ContactForm() {
             louie.richardson99@gmail.com
           </a>
         </p>
+        {response && <p>{response}</p>}
       </div>
     </div>
   );
