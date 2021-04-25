@@ -8,6 +8,8 @@ import ProjectPanel from "../components/ProjectPanel";
 import { RichText } from "prismic-reactjs";
 import Meta from "../components/Meta";
 import Head from "next/head";
+import ContactForm from "../components/ContactForm";
+import AboutInfo from "../components/AboutInfo";
 
 export default function Home({ projects }) {
   return (
@@ -29,28 +31,7 @@ export default function Home({ projects }) {
       </section>
       <section className="max-w-3xl mx-auto mt-12 sm:mt-20 w-11/12">
         <h3 className="section-header">About</h3>
-        <div className="mt-4">
-          <p className="mb-3">
-            I am a passionate individual always wanting to learn more about
-            software engineering and computer science. I considers myself as a
-            quick learner and I am always setting out challenges to learn
-            different programming concepts and to find a more efficient way of
-            solving problems.
-          </p>
-          <p className="mb-3">
-            Coding is my passion and have made it my mission to become an expert
-            in this field. I have been building up my skills and a portfolio to
-            showcase my knowledge for developing efficient web applications.
-          </p>
-          <p className="mb-3">
-            I love both front-end and back-end development, using technologies
-            like React.js and Node.js to build full stack applications.
-          </p>
-          <p>
-            I am on the lookout for a web development position to kickstart my
-            career, working with a team to tackle problems.
-          </p>
-        </div>
+        <AboutInfo />
       </section>
       <section className="w-11/12 mx-auto">
         <div className="hidden sm:block">
@@ -84,17 +65,7 @@ export default function Home({ projects }) {
       </section>
       <section className="mt-12 max-w-3xl mx-auto w-11/12 mb-10 leading-8">
         <h3 className="section-header">Contact</h3>
-        <div className="mt-2">
-          <p>
-            You can get in touch with me at{" "}
-            <a
-              href="mailto:louie.richardson99@gmail.com"
-              className="hover:text-red-600 text-red-600 font-semibold"
-            >
-              louie.richardson99@gmail.com
-            </a>
-          </p>
-        </div>
+        <ContactForm />
         <div className="text-2xl flex sm:hidden mt-2">
           <a
             rel="noopener"
