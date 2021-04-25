@@ -7,13 +7,16 @@ export default function handler(req, res) {
 
   if (req.method === "POST") {
     const data = {
-      from: email,
+      from: `<${email}>`,
       to: "louie.richardson99@gmail.com",
       subject: `Message from ${name}`,
       text: `${message}\n\n(Sent from louierichardson.com)`,
     };
 
     const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
       service: "gmail",
       auth: {
         user: "louie.richardson99@gmail.com",

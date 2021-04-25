@@ -34,12 +34,9 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <a
-                href="mailto:louie.richardson99@gmail.com"
-                className="nav-link sm:mr-5"
-              >
-                Contact
-              </a>
+              <Link href="/#contact">
+                <a className="nav-link sm:mr-5">Contact</a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -63,7 +63,10 @@ export default function Home({ projects }) {
           })}
         </div>
       </section>
-      <section className="mt-12 max-w-3xl mx-auto w-11/12 mb-10 leading-8">
+      <section
+        className="mt-12 max-w-3xl mx-auto w-11/12 mb-10 leading-8 pt-3"
+        id="contact"
+      >
         <h3 className="section-header">Contact</h3>
         <ContactForm />
         <div className="text-2xl flex sm:hidden mt-2">
