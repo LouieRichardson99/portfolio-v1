@@ -1,16 +1,18 @@
 const nodemailer = require("nodemailer");
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   const name = req.body.name;
   const email = req.body.email;
   const message = req.body.message;
 
   if (req.method === "POST") {
+    const emailOutput = `You have a new message from louierichardson.com\n\nFrom ${name} | ${email}\n\nMessage:\n${message}`;
+
     const data = {
-      from: `<${email}>`,
       to: "louie.richardson99@gmail.com",
+      from: '"Nodemailer" <louie.richardson99@gmail.com>',
       subject: `Message from ${name}`,
-      text: `${message}\n\n(Sent from louierichardson.com)`,
+      text: emailOutput,
     };
 
     const transporter = nodemailer.createTransport({

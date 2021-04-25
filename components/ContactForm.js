@@ -72,6 +72,7 @@ export default function ContactForm() {
         </button>
       </form>
       <div className="mt-4 text-center">
+        {response && <p className="-mt-3 mb-3">{response}</p>}
         <p>
           Or you can get in touch with me at{" "}
           <a
@@ -81,7 +82,6 @@ export default function ContactForm() {
             louie.richardson99@gmail.com
           </a>
         </p>
-        {response && <p>{response}</p>}
       </div>
     </div>
   );

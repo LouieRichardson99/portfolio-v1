@@ -69,7 +69,7 @@ export default function Home({ projects }) {
       >
         <h3 className="section-header">Contact</h3>
         <ContactForm />
-        <div className="text-2xl flex sm:hidden mt-2">
+        <div className="text-2xl flex sm:hidden mt-2 justify-center">
           <a
             rel="noopener"
             href="https://twitter.com/louie_rich99"
