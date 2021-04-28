@@ -23,7 +23,7 @@ export default function Home({ projects }) {
       </Head>
       <Meta
         title="Homepage"
-        desc="I’m a web developer based in Milton Keynes, United Kingdom."
+        desc="I am a passionate individual always wanting to learn more about software engineering and computer science. I considers myself as a quick learner and I am always setting out challenges to learn different programming concepts and to find a more efficient way of solving problems."
       />
       <section className="items-center sm:flex w-auto justify-center mt-20 mx-6 block">
         <HeroNameDiv />
