@@ -13,7 +13,7 @@ import AboutInfo from "../components/AboutInfo";
 
 export default function Home({ projects }) {
   return (
-    <main className="font-body text-gray-800">
+    <main className="font-sans text-gray-800">
       <Head>
         <link
           rel="stylesheet"

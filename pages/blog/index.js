@@ -7,7 +7,7 @@ import Meta from "../../components/Meta";
 
 export default function blog({ blogs }) {
   return (
-    <main className="font-body mt-10 text-gray-800">
+    <main className="font-sans mt-10 text-gray-800">
       <Meta title="Blog" desc="I talk about anything tech related!" />
       <h1 className="font-semibold mb-4 text-2xl text-center">Blog</h1>
       <div className="blog-grid">

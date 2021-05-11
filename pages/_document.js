@@ -23,7 +23,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           ></script>
         </Head>
-        <body className="subpixel-antialiased">
+        <body>
           <Main />
           <NextScript />
         </body>

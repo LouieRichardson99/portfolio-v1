@@ -13,7 +13,7 @@ export default function post({ post }) {
         title={post.data.blog_title[0].text}
         desc={post.data.blog_excerpt[0].text}
       />
-      <main className="w-11/12 sm:w-3/4 md:max-w-3xl mx-auto mt-8 sm:mt-16 font-body">
+      <main className="w-11/12 sm:w-3/4 md:max-w-3xl mx-auto mt-8 sm:mt-16 font-sans">
         <article>
           <div className={markdownStyles["markdown"]}>
             {RichText.render(post.data.blog_title)}
