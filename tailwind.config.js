@@ -5,7 +5,6 @@ module.exports = {
     extend: {
       height: {
         xl: "450px",
-        88: "22rem",
       },
       backgroundColor: {
         input_bg: "#e3e3e3",
