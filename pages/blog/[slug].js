@@ -5,6 +5,7 @@ import BlogDate from "../../components/BlogDate";
 import Meta from "../../components/Meta";
 import Image from "next/image";
 import Prismic from "prismic-javascript";
+import Head from "next/head";
 
 export default function post({ post }) {
   return (
@@ -13,6 +14,21 @@ export default function post({ post }) {
         title={post.data.blog_title[0].text}
         desc={post.data.blog_excerpt[0].text}
       />
+      <Head>
+        <meta
+          property="og:url"
+          content={`https://louierichardson.com/blog/${post.uid}`}
+        />
+        <meta property="og:image" content={post.data.hero_image.url} />
+        <meta property="og:site_name" content="Louie Richardson" />
+        <meta property="og:title" content={post.data.blog_title[0].text} />
+        <meta
+          property="og:description"
+          content={post.data.blog_excerpt[0].text}
+        />
+        <meta name="twitter:card" content={post.data.blog_excerpt[0].text} />
+        <meta name="twitter:creator" content="@louie_rich99" />
+      </Head>
       <main className="w-11/12 sm:w-3/4 md:max-w-3xl mx-auto mt-8 sm:mt-16 font-sans">
         <article>
           <div className={markdownStyles["markdown"]}>
