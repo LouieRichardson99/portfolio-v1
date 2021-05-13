@@ -12,7 +12,7 @@
 }
 
 .markdown ul {
-  @apply -mt-2 list-disc text-left;
+  @apply -mt-2 list-disc text-left ml-5;
 }
 
 .markdown h1 {
@@ -24,11 +24,11 @@
 }
 
 .markdown h3 {
-  @apply text-xl mt-8 mb-6 leading-snug;
+  @apply text-xl mt-8 -mb-1 leading-snug;
 }
 
 .markdown h4 {
-  @apply text-lg mt-8 mb-6 leading-snug;
+  @apply text-lg mt-8 -mb-2 leading-snug;
 }
 
 .markdown h5 {
@@ -40,5 +40,5 @@
 }
 
 .markdown a {
-  @apply hover:text-red-600;
+  @apply text-red-600;
 }

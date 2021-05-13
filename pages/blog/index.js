@@ -22,7 +22,7 @@ export default function blog({ blogs }) {
               blogTitle={RichText.render(blog.data.blog_title)}
               blogAltText={blog.data.hero_image.alt}
               blogExcerpt={RichText.render(blog.data.blog_excerpt)}
-              blogSlug={blog.slugs[0]}
+              blogSlug={blog.uid}
             />
           );
         })}
