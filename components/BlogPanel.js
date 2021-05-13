@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function BlogPanel(props) {
   return (
     <Link href={`/blog/${props.blogSlug}`}>
-      <div className="font-body text-gray-800 mx-auto my-6 cursor-pointer w-full md:w-11/12">
+      <div className="font-body text-gray-800 my-6 cursor-pointer w-11/12 mx-auto">
         <Image
           className="rounded-xl"
           width={props.blogImageWidth}
