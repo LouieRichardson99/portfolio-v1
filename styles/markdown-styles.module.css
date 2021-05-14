@@ -38,6 +38,9 @@
 .markdown img {
   @apply mx-auto my-10;
 }
+.markdown pre {
+  @apply mx-auto my-8 p-2 bg-gray-100 rounded-md;
+}
 
 .markdown a {
   @apply text-red-600;
