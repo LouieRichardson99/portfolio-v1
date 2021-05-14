@@ -8,6 +8,7 @@ module.exports = {
       },
       backgroundColor: {
         input_bg: "#e3e3e3",
+        green_btn: "#25B62C",
       },
     },
   },

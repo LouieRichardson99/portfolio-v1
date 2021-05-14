@@ -45,7 +45,7 @@ export default function EmailListForm() {
           value={form.email}
         ></input>
         <button
-          className="bg-green-500 text-white p-2 rounded-sm w-full mt-1"
+          className="bg-green_btn text-white p-2 rounded-sm w-full mt-1"
           type="submit"
         >
           Subscribe<i className="fas fa-envelope-open-text ml-2"></i>
