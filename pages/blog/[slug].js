@@ -62,18 +62,6 @@ export default function post({ post }) {
   );
 }
 
-export async function getStaticProps(context) {
-  const slug = context.params.slug;
-  const post = await client.getByUID("blog_post", slug);
-
-  return {
-    props: {
-      post,
-    },
-    revalidate: 600,
-  };
-}
-
 export async function getStaticPaths() {
   const posts = await client.query(
     Prismic.Predicates.at("document.type", "blog_post")
@@ -87,6 +75,18 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
+  };
+}
+
+export async function getStaticProps(context) {
+  const slug = context.params.slug;
+  const post = await client.getByUID("blog_post", slug);
+
+  return {
+    props: {
+      post,
+    },
+    revalidate: 600,
   };
 }
