@@ -6,6 +6,7 @@ import Meta from "../../components/Meta";
 import Image from "next/image";
 import Prismic from "prismic-javascript";
 import Head from "next/head";
+import EmailListForm from "../../components/EmailListForm";
 
 export default function post({ post }) {
   return (
@@ -55,6 +56,7 @@ export default function post({ post }) {
             {RichText.render(post.data.blog_content)}
           </div>
         </article>
+        <EmailListForm />
       </main>
     </>
   );
