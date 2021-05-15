@@ -7,8 +7,15 @@ import Image from "next/image";
 import Prismic from "prismic-javascript";
 import Head from "next/head";
 import EmailListForm from "../../components/EmailListForm";
+import { useRouter } from "next/router";
 
 export default function post({ post }) {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <div className="text-center mt-4">Loading...</div>;
+  }
+
   return (
     <>
       <Meta
