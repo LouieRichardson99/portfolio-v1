@@ -8,7 +8,10 @@ import Meta from "../../components/Meta";
 export default function blog({ blogs }) {
   return (
     <>
-      <Meta title="Blog" desc="I talk about anything tech related!" />
+      <Meta
+        title="Blog"
+        desc="My name is Louie and I love technology and coding! I will blog about anything tech or code related. I post on a very regular basis and would love if you joined my mailing list too!"
+      />
       <main className="font-sans mt-10 text-gray-800">
         <h1 className="font-semibold mb-4 text-2xl text-center">Blog</h1>
         <div className="blog-grid">
