@@ -2,7 +2,6 @@ import { client } from "../../utils/prismicClient";
 import { RichText } from "prismic-reactjs";
 import markdownStyles from "../../styles/markdown-styles.module.css";
 import BlogDate from "../../components/BlogDate";
-import Meta from "../../components/Meta";
 import Image from "next/image";
 import Prismic from "prismic-javascript";
 import Head from "next/head";
@@ -18,11 +17,9 @@ export default function post({ post }) {
 
   return (
     <>
-      <Meta
-        title={post.data.blog_title[0].text}
-        desc={post.data.blog_excerpt[0].text}
-      />
       <Head>
+        <title>{post.data.blog_title[0].text}</title>
+        <meta name="description" content={post.data.blog_excerpt[0].text} />
         <meta
           property="og:url"
           content={`https://louierichardson.com/blog/${post.uid}`}
@@ -30,8 +27,9 @@ export default function post({ post }) {
         <meta property="og:image" content={post.data.hero_image.url} />
         <meta property="og:site_name" content="Louie Richardson" />
         <meta
+          name="og:title"
           property="og:title"
-          content={`${post.data.blog_title[0].text} | Louie Richardson`}
+          content={`${post.data.blog_title[0].text} - Louie Richardson`}
         />
         <meta
           property="og:description"
@@ -45,10 +43,8 @@ export default function post({ post }) {
         <meta name="twitter:creator" content="@louie_rich99" />
       </Head>
       <main className="w-11/12 sm:w-3/4 md:max-w-3xl mx-auto mt-8 sm:mt-16 font-sans">
-        <article>
-          <div className={markdownStyles["markdown"]}>
-            {RichText.render(post.data.blog_title)}
-          </div>
+        <article className={markdownStyles["markdown"]}>
+          {RichText.render(post.data.blog_title)}
           <div className="text-gray-700 mb-6 sm:mb-10 text-center -mt-8">
             <BlogDate dateString={post.first_publication_date} />
           </div>
@@ -59,9 +55,7 @@ export default function post({ post }) {
             width={post.data.hero_image.dimensions.width}
             height={post.data.hero_image.dimensions.height}
           />
-          <div className={markdownStyles["markdown"]}>
-            {RichText.render(post.data.blog_content)}
-          </div>
+          {RichText.render(post.data.blog_content)}
         </article>
         <EmailListForm />
       </main>
