@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroPortraitDiv() {
   return (
-    <div className="flex relative justify-center">
+    <div className="sm:flex relative justify-center hidden">
       <div className="text-3xl text-gray-800 absolute -left-10 bottom-1 hidden sm:block">
         <a
           rel="noopener"
@@ -33,6 +33,7 @@ export default function HeroPortraitDiv() {
           width="275"
           height="275"
           alt="Louie Richardson, Website Developer"
+          priority={true}
         />
       </div>
     </div>
