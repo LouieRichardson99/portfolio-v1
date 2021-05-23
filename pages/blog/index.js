@@ -3,15 +3,39 @@ import Prismic from "prismic-javascript";
 import BlogPanel from "../../components/BlogPanel";
 import BlogDate from "../../components/BlogDate";
 import { RichText } from "prismic-reactjs";
-import Meta from "../../components/Meta";
+import Head from "next/head";
 
 export default function blog({ blogs }) {
   return (
     <>
-      <Meta
-        title="Blog"
-        desc="My name is Louie and I love technology and coding! I will blog about anything tech or code related. I post on a very regular basis and would love if you joined my mailing list too!"
-      />
+      <Head>
+        <title>Louie Richardson | Blog</title>
+        <meta
+          name="description"
+          content="My name is Louie and I love technology and coding! I will blog about anything tech or code related. I post on a very regular basis and would love if you joined my mailing list too!"
+        />
+        <meta property="og:url" content={"https://louierichardson.com/blog"} />
+        <meta
+          property="og:image"
+          content="https://louierichardson.com/public/og-image.png"
+        />
+        <meta property="og:site_name" content="Louie Richardson" />
+        <meta
+          name="og:title"
+          property="og:title"
+          content={"Louie Richardson | Blog"}
+        />
+        <meta
+          property="og:description"
+          content="I am a passionate individual always wanting to learn more about software engineering and computer science."
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:description"
+          content="I am a passionate individual always wanting to learn more about software engineering and computer science."
+        />
+        <meta name="twitter:creator" content="@louie_rich99" />
+      </Head>
       <main className="font-sans mt-10 text-gray-800">
         <h1 className="font-semibold mb-4 text-2xl text-center">Blog</h1>
         <div className="blog-grid">
