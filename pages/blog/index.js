@@ -17,7 +17,7 @@ export default function blog({ blogs }) {
         <meta property="og:url" content={"https://louierichardson.com/blog"} />
         <meta
           property="og:image"
-          content="https://louierichardson.com/public/og-image.png"
+          content="https://louierichardson.com/og-image.png"
         />
         <meta property="og:site_name" content="Louie Richardson" />
         <meta

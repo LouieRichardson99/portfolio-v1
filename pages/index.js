@@ -27,7 +27,7 @@ export default function Home({ projects }) {
         <meta property="og:url" content={"https://louierichardson.com"} />
         <meta
           property="og:image"
-          content="https://louierichardson.com/public/og-image.png"
+          content="https://louierichardson.com/og-image.png"
         />
         <meta property="og:site_name" content="Louie Richardson" />
         <meta
