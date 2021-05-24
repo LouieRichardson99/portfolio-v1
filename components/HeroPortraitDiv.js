@@ -8,6 +8,7 @@ export default function HeroPortraitDiv() {
           rel="noopener"
           href="https://twitter.com/louie_rich99"
           target="_blank"
+          aria-label="Twitter"
         >
           <i
             aria-label="Twitter link icon"
@@ -18,6 +19,7 @@ export default function HeroPortraitDiv() {
           rel="noopener"
           href="https://github.com/LouieRichardson99"
           target="_blank"
+          aria-label="GitHub"
         >
           <i
             aria-label="Github link icon"
