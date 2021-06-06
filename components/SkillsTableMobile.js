@@ -36,7 +36,7 @@ export default function SkillsTableMobile() {
         </tr>
         <tr>
           <td className="py-1">
-            <i className="devicon-react-original mr-2"></i>Next.js
+            <i className="devicon-nextjs-original colored mr-2"></i>Next.js
           </td>
         </tr>
       </tbody>

@@ -21,7 +21,7 @@ export default function Home({ projects }) {
         />
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css"
           defer
         />
         <meta property="og:url" content={"https://louierichardson.com"} />

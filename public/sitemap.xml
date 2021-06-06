@@ -19,4 +19,41 @@
 		<lastmod>2021-04-30T10:43:12+00:00</lastmod>
 		<priority>0.64</priority>
 	</url>
+		<url>
+		<loc>https://louierichardson.com/blog/why-i-love-using-nextjs</loc>
+		<lastmod>2021-04-30T10:43:12+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://louierichardson.com/blog/tailwind-css-with-nextjs</loc>
+		<lastmod>2021-04-30T10:43:12+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://louierichardson.com/blog/object-oriented-programming</loc>
+		<lastmod>2021-04-30T10:43:12+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://louierichardson.com/blog/what-is-nodejs-and-should-i-learn-it-in-2021</loc>
+		<lastmod>2021-04-30T10:43:12+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://louierichardson.com/blog/static-site-generation-in-nextjs</loc>
+		<lastmod>2021-04-30T10:43:12+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://louierichardson.com/blog/why-i-use-prismic-cms-for-my-website-portfolio-and-blog</loc>
+		<lastmod>2021-04-30T10:43:12+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://louierichardson.com/blog/hashing-and-comparing-passwords-with-bcrypt-in-nodejs</loc>
+		<lastmod>2021-04-30T10:43:12+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
 </urlset>
+
+
