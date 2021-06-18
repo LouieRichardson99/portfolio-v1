@@ -1,46 +1,74 @@
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-white">
-      <div className="container-fluid text-center sm:text-left text-gray-800">
-        <div></div>
-        <button
-          className="navbar-toggler top-2 relative right-2 mb-3"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav justify-end w-full sm:top-3 relative sm:right-3">
-            <li className="nav-item">
-              <Link href="/">
-                <a className="nav-link sm:mr-5">Home</a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/#projects">
-                <a className="nav-link sm:mr-5">Projects</a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/blog">
-                <a className="nav-link sm:mr-5">Blog</a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/#contact">
-                <a className="nav-link sm:mr-5">Contact</a>
-              </Link>
-            </li>
-          </ul>
+    <>
+      <nav className="hidden justify-end sm:flex max-w-6xl px-5 py-5 mx-auto">
+        <ul className="flex text-gray-700">
+          <li>
+            <Link href="/">
+              <a className="mr-6 hover:text-gray-600">Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/#projects">
+              <a className="mr-6 hover:text-gray-600">Projects</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog">
+              <a className="mr-6 hover:text-gray-600">Blog</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/#contact">
+              <a className="hover:text-gray-600">Contact</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+
+      {/* Mobile Nav */}
+
+      <nav className="block sm:hidden relative">
+        <div className="justify-end flex">
+          <button
+            className="focus:outline-none h-full mr-5 mt-3"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <i className="fas fa-bars text-2xl text-gray-800"></i>
+          </button>
         </div>
-      </div>
-    </nav>
+        <ul
+          className={`${
+            !isOpen && "hidden"
+          } relative text-center block text-gray-800`}
+        >
+          <li className="mb-1">
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li className="mb-1">
+            <Link href="/#projects">
+              <a>Projects</a>
+            </Link>
+          </li>
+          <li className="mb-1">
+            <Link href="/blog">
+              <a>Blog</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/#contact">
+              <a>Contact</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 }

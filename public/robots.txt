@@ -1,3 +1,2 @@
 Sitemap: https://louierichardson.com/sitemap.xml
 User-agent: *
-Allow: /
